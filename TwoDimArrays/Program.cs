@@ -30,6 +30,33 @@ namespace TwoDimArrays
 
             // Задача 2
 
+            int[,] testTable = new int[,]
+            {
+                { 1, 3 },
+                { 2, 4 },
+                { 3, 5 },
+                { 4, 6 }
+            };
+
+            Console.Write("The even elements of an array are: ");
+
+            for (int i = 0; i < testTable.GetLength(0); i++)
+            {
+                for (int j = 0; j < testTable.GetLength(1); j++)
+                {
+                    if (testTable[i, j] % 2 == 0)
+                    {
+                        Console.Write(testTable[i, j] + " ");
+                    }
+                }
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("======================================================");
+            Console.WriteLine();
+
+            // Задача 3
+
             int[,] testTable2 = new int[,]
             {
                 { 0, 1, 2 },
@@ -56,7 +83,7 @@ namespace TwoDimArrays
             Console.WriteLine("======================================================");
             Console.WriteLine();
 
-            // Задача 3
+            // Задача 4
 
             Console.WriteLine("Enter N=");
             int n = 0;
@@ -125,7 +152,7 @@ namespace TwoDimArrays
             Console.WriteLine("======================================================");
             Console.WriteLine();
 
-            // Задача 4
+            // Задача 5
 
             int[,] testTable4 = new int[5, 5];
 
